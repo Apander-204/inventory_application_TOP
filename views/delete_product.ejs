@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/style.css">
+<header class="header">
+    <div class="container">
+        <a href="/new">Add a new product</a><br>
+        <a href="/deletecategory">Delete a category</a><br>
+        <a href="/deleteproduct">Delete a product</a>
+    </div>
+</header>
+<main class="form-main">
+    <div class="container">
+        <div class="title">
+            <h2>Delete Product</h2>
+        </div>
+        <form action="/deleteproduct" method="post" class="form">
+            <input placeholder="Product Name" name="product"/>
+            <button>Delete</button>
+        </form>
+    </div>
+</main>

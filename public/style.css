@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    color: #333;
+}
+
+.header .container {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.header .header-nav {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #5a5a5a;
+}
+
+.center {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 900px;
+    gap: 5px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 300px;
+    border: 1px #000 solid;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.form-main .container {
+    background-color: #5a5a5a;
+    padding-bottom: 75px;
+    border-radius: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    gap: 20px;
+}
+
+.form input {
+    width: 400px;
+    height: 50px;
+}
+
+.form button {
+    width: 400px;
+    height: 50px;
+}

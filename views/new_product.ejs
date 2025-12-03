@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/style.css">
+<header class="header">
+    <div class="container">
+        <a href="/new">Add a new product</a><br>
+        <a href="/deletecategory">Delete a category</a><br>
+        <a href="/deleteproduct">Delete a product</a>
+    </div>
+</header>
+<main class="form-main">
+    <div class="container">
+        <div class="title">
+            <h2>New Product</h2>
+        </div>
+        <form action="/new" method="post" class="form">
+            <input placeholder="Product Name" name="name" />
+            <input placeholder="Product category" name="category" />
+            <input placeholder="Brand" name="brand" />
+            <input placeholder="Price" name="price" />
+            <button>Create</button>
+        </form>
+    </div>
+</main>
