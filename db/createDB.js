@@ -45,6 +45,8 @@ async function createDB() {
     port: parseInt(process.env.DB_PORT)
   });
   await client.connect();
+  await client.query('CREATE SCHEMA IF NOT EXISTS inventory_application_schema;');
+  await client.query('SET search_path TO inventory_application_schema;');
   await client.query(SQL);
   await client.end();
   console.log("done");
