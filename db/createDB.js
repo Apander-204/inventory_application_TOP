@@ -1,6 +1,8 @@
 const { Client } = require("pg");
 require('dotenv').config();
 
+const schema = process.env.SCHEMA_NAME;
+
 const SQL = `
 CREATE TABLE IF NOT EXISTS products (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -45,8 +47,8 @@ async function createDB() {
     port: parseInt(process.env.DB_PORT)
   });
   await client.connect();
-  await client.query('CREATE SCHEMA IF NOT EXISTS inventory_application_schema;');
-  await client.query('SET search_path TO inventory_application_schema;');
+  await client.query(`CREATE SCHEMA IF NOT EXISTS ${schema};`);
+  await client.query(`SET search_path TO ${schema};`);
   await client.query(SQL);
   await client.end();
   console.log("done");
